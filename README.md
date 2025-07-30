@@ -7,7 +7,64 @@ This project is a full-stack application that consists of:
 
 ---
 
-## 📁 Folder Structure
+### Chrome Extension Setup
+
+1. Open Chrome and go to `chrome://extensions/`
+2. Enable **Developer mode** (top right corner)
+3. Click **Load unpacked** and select the `client` folder inside this project.
+4. Open LinkedIn and **log in manually**.
+5. Click the extension icon and hit the **Scrape** button.
+6. The extension will open LinkedIn profiles one by one, scrape the data, and send it to the backend.
+
+---
+
+## Scraped Data Includes
+
+- Name  
+- Current URL  
+- Location  
+- About  
+- Bio/Headline  
+- Follower Count  
+- Connection Count
+
+---
+
+## Database
+
+This project uses **SQLite** for easier table viewing and management during demo.  
+You can inspect the `database.sqlite` file using any SQLite browser.
+
+---
+
+## Tech Stack
+
+- **Frontend:** Chrome Extension (HTML + TailwindCSS + JS)  
+- **Backend:** NodeJS, Express  
+- **ORM:** Sequelize  
+- **Database:** SQLite
+
+---
+
+### Server Setup
+
+  1. Navigate to the server folder:
+  
+     ```bash
+     cd server
+
+  2. Install dependencies:
+  
+     ```bash
+     npm install
+
+  3. Start the backend server:
+  
+     ```bash
+     npx nodemon app.js
+     
+
+## Folder Structure
 
 ```bash
 Extension_Assignment/
