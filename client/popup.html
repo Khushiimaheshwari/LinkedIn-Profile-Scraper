@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile Scraper</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body class="gradient-bg p-0 m-0">
+  <div class="container">
+    <div class="glass-effect rounded-2xl p-8 w-full max-w-md glow-effect animate-float">
+      <div class="text-center mb-8">
+        <h1 class="text text-2xl font-bold mb-2">LinkedIn Profile Scraper</h1>
+      </div>
+
+      <button 
+        id="getTitleBtn" 
+        class="w-full font-semibold py-4 px-6 rounded-xl transition-all duration-500 transform focus:outline-none focus:ring-4 focus:ring-opacity-50 mb-6">
+        <div class="imageContainer">
+          <svg class="image" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+          </svg>
+          <span class="imageText">Scrape</span>
+        </div>
+      </button>
+
+      <div class="flex justify-center mt-6 space-x-2 linkedin-dots">
+        <div class="w-2 h-2 dot-1 rounded-full animate-bounce"></div>
+        <div class="w-2 h-2 dot-2 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+        <div class="w-2 h-2 dot-3 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./popup.js"></script>
+</body>
+</html>
